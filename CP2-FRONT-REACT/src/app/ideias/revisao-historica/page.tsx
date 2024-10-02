@@ -1,11 +1,11 @@
-// src/app/ideias/colisoes-cosmicas/page.tsx
-import ColisoesCosmicasContent from './ColisoesCosmicasContent';
+// src/app/ideias/revisao-historica/page.tsx
+import RevisaoHistoricaContent from './RevisaoHistoricaContent';
 
 export const metadata = {
-  title: 'Colisões Cósmicas - Immanuel Velikovsky',
-  description: 'Explorando a teoria das colisões cósmicas proposta por Immanuel Velikovsky.',
+  title: 'Revisão Histórica - Immanuel Velikovsky',
+  description: 'Uma revisão histórica das ideias propostas por Immanuel Velikovsky.',
 };
 
-export default function ColisoesCosmicas() {
-  return <ColisoesCosmicasContent />;
+export default function RevisaoHistoricaPage() {
+  return <RevisaoHistoricaContent />;
 }

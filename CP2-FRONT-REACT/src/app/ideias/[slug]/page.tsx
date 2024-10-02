@@ -1,14 +1,15 @@
-/ src/app / [slug] / page.tsx;
-("use client");
-import { useParams } from "next/navigation";
+// src/app/[slug]/page.tsx
+"use client"; 
+import { useParams } from 'next/navigation';
 
 export default function SlugPage() {
   const params = useParams();
   const slug = params?.slug;
 
+
   let content;
   switch (slug) {
-    case "colisoes-cosmicas":
+    case 'colisoes-cosmicas':
       content = (
         <>
           <h1>Colisões Cósmicas</h1>
@@ -16,7 +17,7 @@ export default function SlugPage() {
         </>
       );
       break;
-    case "memoria-coletiva":
+    case 'memoria-coletiva':
       content = (
         <>
           <h1>Memória Coletiva</h1>
@@ -24,7 +25,7 @@ export default function SlugPage() {
         </>
       );
       break;
-    case "revisao-historica":
+    case 'revisao-historica':
       content = (
         <>
           <h1>Revisão Histórica</h1>
@@ -41,5 +42,9 @@ export default function SlugPage() {
       );
   }
 
-  return <main className="container-principal">{content}</main>;
+  return (
+    <main className="container-principal">
+      {content}
+    </main>
+  );
 }
