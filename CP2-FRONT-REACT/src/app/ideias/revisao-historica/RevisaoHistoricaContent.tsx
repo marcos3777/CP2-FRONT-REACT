@@ -62,3 +62,11 @@ export default function RevisaoHistoricaContent() {
                 <p className="text-center mt-2">{image.title}</p>
               </div>
             ))
+        ) : (
+            <p>Carregando imagens da NASA...</p>
+          )}
+        </div>
+      </div>
+    </main>
+  );
+}
