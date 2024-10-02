@@ -14,12 +14,12 @@ export default function OrbitaDeVenusContent() {
   const [nasaImage, setNasaImage] = useState<NasaImage | null>(null);
 
   useEffect(() => {
-    // Faz uma chamada para o endpoint da API que criamos
+    
     fetch('/api/nasa-images')
       .then((res) => res.json())
       .then((data) => {
         if (Array.isArray(data) && data.length > 0) {
-          setNasaImage(data[0]); // Usa a primeira imagem retornada pela API
+          setNasaImage(data[0]); 
         }
       })
       .catch((error) => {
