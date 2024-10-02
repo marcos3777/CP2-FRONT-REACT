@@ -41,3 +41,24 @@ export default function RevisaoHistoricaContent() {
         resistência da comunidade científica, sendo rejeitadas por astrônomos e historiadores devido à falta de
         evidências substanciais.
       </p>
+      <p>
+        No entanto, a abordagem interdisciplinar de Velikovsky, que relacionava mitologia, história e astronomia, abriu
+        debates importantes sobre como a ciência interpreta registros antigos e fenômenos naturais. Sua obra incentivou
+        a busca por novas explicações e revisões na compreensão dos eventos históricos e naturais do nosso planeta.
+      </p>
+      <div className="mt-6">
+        <h2>Imagens da NASA</h2>
+        <div className="grid-imagens">
+          {nasaImages.length > 0 ? (
+            nasaImages.map((image, index) => (
+              <div key={index} className="imagem-principal">
+                <Image
+                  src={image.url}
+                  alt={image.title || 'Imagem da NASA'}
+                  width={400}
+                  height={300}
+                  className="rounded-lg shadow-md"
+                />
+                <p className="text-center mt-2">{image.title}</p>
+              </div>
+            ))
